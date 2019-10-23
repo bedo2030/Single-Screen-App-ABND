@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SinaiUniversity</string>
+    <string name="branding_image_content_description">Sinai University Branding Image</string>
+    <string name="logo_content_description">Sinai University Logo</string>
+    <string name="address_headline">Address:</string>
+    <string name="address_icon_content_description">Address Icon</string>
+    <string name="address_info_text">El Masaid, El Arish, North Sinai, Egypt.</string>
+    <string name="contact_headline">Contact:</string>
+    <string name="contact_phone_icon_content_description">Phone Icon</string>
+    <string name="contact_email_icon_content_description">Email Icon</string>
+    <string name="contact_website_icon_content_description">Website Icon</string>
+
+    <string name="contact_phone">19050</string>
+    <string name="contact_email">Sinai@su.edu.eg</string>
+    <string name="contact_website">www.su.edu.eg</string>
+    <string name="working_hours_headline">Working Hours:</string>
+    <string name="working_hours_icon_content_description">Working Hours Icon</string>
+    <string name="working_hours_info_text">From 8 am To 2 pm</string>
+</resources>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sinaiuniversity.MainActivity">
+
+    <!-- Main Layout Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <!-- Branding Image and Logo Container -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_background"
+            android:elevation="10dp">
+
+            <!-- Branding Image -->
+            <ImageView
+                android:id="@+id/mainImg"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="@string/branding_image_content_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/su_compressed" />
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#96e7b95e"
+                android:contentDescription="@string/logo_content_description"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+        <!-- Address Info Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <!-- Address title -->
+            <TextView
+                android:id="@+id/address_title_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/icon_background"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:text="@string/address_headline"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <!-- Address description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_box"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/address_icon_imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight=".13"
+                    android:background="@drawable/icon_background"
+                    android:contentDescription="@string/address_icon_content_description"
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_place_black_48dp" />
+
+                <TextView
+                    android:id="@+id/address_info_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".87"
+                    android:autoLink="map"
+                    android:background="@drawable/info_background"
+                    android:elevation="10dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="16dp"
+                    android:text="@string/address_info_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sections Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#9f5999" />
+
+        <!-- Contact info  Container-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <!-- Contact info -->
+            <TextView
+                android:id="@+id/contact_hedline_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/icon_background"
+                android:elevation="10dp"
+                android:padding="8dp"
+                android:text="@string/contact_headline"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/info_box"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/phone_icon_imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight=".13"
+                    android:background="@drawable/icon_background"
+                    android:contentDescription="@string/contact_phone_icon_content_description"
+                    android:elevation="2dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_settings_phone_black_48dp" />
+
+                <TextView
+                    android:id="@+id/phone_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".87"
+                    android:autoLink="phone"
+                    android:background="@drawable/info_background"
+                    android:elevation="10dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="16dp"
+                    android:text="@string/contact_phone"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/info_box"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/email_icon_imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight=".13"
+                    android:background="@drawable/icon_background"
+                    android:contentDescription="@string/contact_email_icon_content_description"
+                    android:elevation="2dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_email_black_48dp" />
+
+                <TextView
+                    android:id="@+id/email_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".87"
+                    android:autoLink="email"
+                    android:background="@drawable/info_background"
+                    android:elevation="10dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="16dp"
+                    android:text="@string/contact_email"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <!-- Website -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_box"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/website_icon_imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight=".13"
+                    android:background="@drawable/icon_background"
+                    android:contentDescription="@string/contact_website_icon_content_description"
+                    android:elevation="2dp"
+                    android:padding="4dp"
+                    android:src="@drawable/website" />
+
+                <TextView
+                    android:id="@+id/website_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".87"
+                    android:autoLink="web"
+                    android:background="@drawable/info_background"
+                    android:elevation="10dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="16dp"
+                    android:text="@string/contact_website"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sections Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#9f5999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+            <!-- Working Hours -->
+            <TextView
+                android:id="@+id/working_hours_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/icon_background"
+                android:elevation="6dp"
+                android:padding="8dp"
+                android:text="@string/working_hours_headline"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_box"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/working_hours_icon_imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight=".13"
+                    android:background="@drawable/icon_background"
+                    android:contentDescription="@string/working_hours_icon_content_description"
+                    android:elevation="2dp"
+                    android:padding="4dp"
+                    android:src="@drawable/working_hours" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".87"
+                    android:autoLink="map"
+                    android:background="@drawable/info_background"
+                    android:elevation="10dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="16dp"
+                    android:text="@string/working_hours_info_text"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
