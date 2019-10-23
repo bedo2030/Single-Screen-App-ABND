@@ -1,2 +1,2 @@
 # Single-Screen-App-ABND
-![Screenshot](docs/screenshot/1.png) ![Screenshot](docs/screenshot/2.png)
+<img src="docs/screenshot/1.png" width="400">  <img src="docs/screenshot/2.png" width="400">
